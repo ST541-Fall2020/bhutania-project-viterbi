@@ -1,0 +1,8 @@
+Resources:
+
+https://en.wikipedia.org/wiki/Viterbi_algorithm
+
+https://personal.utdallas.edu/~prr105020/biol6385/2019/lecture/lecture12_Viterbi_handout.pdf
+
+https://faraday.emu.edu.tr/eaince/ee562/Public/tutorial_ce_va2.htm
+

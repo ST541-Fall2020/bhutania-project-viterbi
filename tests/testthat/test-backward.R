@@ -1,0 +1,11 @@
+test_that("Backward Algorithm works", {
+  hidden  = matrix(c(0.54, 0.49, 0.46, 0.51),nrow = 2,ncol = 2)
+  visible = matrix(c(0.16, 0.25, 0.26, 0.28, 0.58, 0.47),nrow = 2,ncol = 3)
+  init    = c(0.5, 0.5)
+  example = c(1, 2, 3)
+  expect  = matrix(0, 3, 2)
+  expect[3, ] = c(1, 1)
+  expect[2, ] = c(0.54*.58+0.46*0.47, 0.49*0.58+0.51*0.47)
+  expect[1, ] = c(0.54*0.26*expect[2,1]+0.46*0.28*expect[2,2], 0.49*0.26*expect[2,1]+0.51*0.28*expect[2,2])
+  expect_equivalent(backward(example, hidden, visible, init), expect)
+})

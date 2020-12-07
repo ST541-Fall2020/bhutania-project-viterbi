@@ -1,0 +1,18 @@
+Package: BhutaniaViterbi
+Title: Arnav Bhutani Viterbi Version
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "Arnav",
+           family = "Bhutani",
+           role = c("aut", "cre"),
+           email = "bhutania@oregonstate.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: A package that runs EM on a two state HMM example, and finds the most probable path using an implementation of the Viterbi Algorithm.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests:
+    testthat

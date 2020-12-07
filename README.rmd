@@ -1,3 +1,6 @@
+
+# bhutania-project-viterbi
+
 By Arnav Bhutani
 
 <!-- badges: start -->
@@ -9,17 +12,15 @@ The goal of bhutania-project-viterbi is to implement the viterbi algorithm in R 
 
 [Project Walkthrough](./doc/project_walkthrough.pdf)
 
-[main file](./src/main.pdf)
-
 Required Packages:
-  * testthat
-  * devtools
-  * HMM (for testing/timing)
-  * BenchMark
-  * Tidyverse
-  * Rcpp
-  * Here
-  * Readr
+* testthat
+* devtools
+* HMM (for testing/timing)
+* BenchMark
+* Tidyverse
+* Rcpp
+* Here
+* Readr
 
 Important Code Files:
   * main.R

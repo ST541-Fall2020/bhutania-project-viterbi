@@ -1,0 +1,11 @@
+test_that("forward works", {
+  hidden  = matrix(c(0.54, 0.49, 0.46, 0.51),nrow = 2,ncol = 2)
+  visible = matrix(c(0.16, 0.25, 0.26, 0.28, 0.58, 0.47),nrow = 2,ncol = 3)
+  init    = c(0.5, 0.5)
+  example = c(1, 2, 3)
+  expect  = matrix(0, 3, 2)
+  expect[1, ] = c(0.5*0.16, 0.5*0.25)
+  expect[2, ] = c(0.26*(0.54*expect[1,1]+0.49*expect[1,2]), 0.28*(0.46*expect[1,1]+0.51*expect[1,2]))
+  expect[3, ] = c(0.58*(0.54*expect[2,1]+0.49*expect[2,2]), 0.47*(0.46*expect[2,1]+0.51*expect[2,2]))
+  expect_equivalent(forward(example, hidden, visible, init), expect)
+})
